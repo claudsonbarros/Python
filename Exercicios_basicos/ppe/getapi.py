@@ -1,7 +1,7 @@
 import requests
 
-
 r = requests.get(url='https://api.chucknorris.io/jokes/random')
-print(r.json())
+j = r.json()
+print(j['value'])
 
 
